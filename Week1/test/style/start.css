@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    height: 100svh;
+    background-color: black;
+}
+#enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: popInStart 3s ease 2s;
+}
+#logoenter{
+    width:100vw;
+    max-width: 512px;
+    height: 100%;
+    max-height: 512px;
+    visibility: hidden;
+    animation: popInStart 3s ease 2s;
+    animation-fill-mode: forwards;
+}
+#whitebar{
+    position: absolute;
+    align-self: flex-end;
+    width:100%;
+    height: 0vh;
+    background-color: white;
+    animation: fillEmpty 3s ease-out 1s;
+}
+@keyframes fillEmpty{
+    0%{
+        background-position: bottom;
+        height: 0vh;
+    }
+    25%{
+        background-position: top;
+        height: 100vh;
+    }
+    100%{
+        background-position: bottom;
+        height: 0vh;
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+@keyframes popInStart{
+    1%{
+        visibility: visible;
+    }
+    85%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
