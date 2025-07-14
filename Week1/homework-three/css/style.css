@@ -1,0 +1,150 @@
+:root {
+	--rosewater: #f5e0dc;
+	--flamingo: #f2cdcd;
+	--pink: #f5c2e7;
+	--mauve: #cba6f7;
+	--red: #f38ba8;
+	--maroon: #eba0ac;
+	--peach: #fab387;
+	--yellow: #f9e2af;
+	--green: #a6e3a1;
+	--teal: #94e2d5;
+	--sky: #89dceb;
+	--sapphire: #74c7ec;
+	--blue: #89b4fa;
+	--lavender: #b4befe;
+	--text: #cdd6f4;
+	--subtext1: #bac2de;
+	--subtext0: #a6adc8;
+	--overlay2: #9399b2;
+	--overlay1: #7f849c;
+	--overlay0: #6c7086;
+	--surface2: #585b70;
+	--surface1: #45475a;
+	--surface0: #313244;
+	--base: #1e1e2e;
+	--mantle: #181825;
+	--crust: #11111b;
+}
+body {
+	background-color: var(--base);
+	color: var(--text);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	padding: 2rem;
+}
+
+h1 {
+	color: var(--blue);
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+}
+
+h2,
+h3 {
+	color: var(--mauve);
+	margin-bottom: 1rem;
+}
+
+section {
+	background-color: var(--surface0);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border-radius: 12px;
+	border: 1px solid var(--surface1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+p {
+	color: var(--subtext1);
+	margin-bottom: 1rem;
+}
+
+.input-group {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--text);
+	font-weight: 500;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 0.8rem;
+	background-color: var(--surface1);
+	border: 2px solid var(--surface2);
+	border-radius: 8px;
+	color: var(--text);
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+	box-sizing: border-box;
+}
+
+/* Placeholder styling */
+input::placeholder {
+	color: var(--overlay0);
+	opacity: 0.8;
+}
+
+input:focus::placeholder {
+	color: var(--overlay2);
+	opacity: 0.6;
+}
+
+input:focus,
+select:focus {
+	outline: none;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 3px rgba(137, 180, 250, 0.2);
+}
+
+input.error,
+select.error {
+	border-color: var(--red);
+	box-shadow: 0 0 0 3px rgba(243, 139, 168, 0.2);
+}
+
+.error-message {
+	display: none;
+	color: var(--red);
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+}
+
+button {
+	background-color: var(--blue);
+	color: var(--base);
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: var(--lavender);
+}
+
+button:active {
+	transform: translateY(1px);
+}
+
+.result {
+	margin-top: 2rem;
+	padding: 1.5rem;
+	background-color: var(--surface1);
+	border-radius: 8px;
+	border-left: 4px solid var(--green);
+}
+
+.result h3 {
+	margin-bottom: 1rem;
+	color: var(--green);
+}

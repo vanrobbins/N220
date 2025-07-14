@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interest Calculator</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<section>
+			<h1>Simple Interest Calculator</h1>
+			<form id="simpleInterestForm">
+				<div class="input-group">
+					<label for="principal">Principal Amount ($):</label>
+					<input
+						type="text"
+						id="principal"
+						placeholder="Enter amount (e.g., 1000)"
+						required
+					/>
+					<span class="error-message" id="principalError"></span>
+				</div>
+
+				<div class="input-group">
+					<label for="rate">Interest Rate (%):</label>
+					<input
+						type="text"
+						id="rate"
+						placeholder="Enter rate (e.g., 5.5)"
+						required
+					/>
+					<span class="error-message" id="rateError"></span>
+				</div>
+
+				<div class="input-group">
+					<label for="time">Time (years):</label>
+					<input
+						type="text"
+						id="time"
+						placeholder="Enter years (e.g., 3)"
+						required
+					/>
+					<span class="error-message" id="timeError"></span>
+				</div>
+
+				<button type="submit">Calculate Simple Interest</button>
+				<div id="simpleResult" class="result"></div>
+			</form>
+		</section>
+
+		<section>
+			<h1>Compound Interest Calculator</h1>
+			<form id="compoundInterestForm">
+				<div class="input-group">
+					<label for="compoundPrincipal">Principal Amount ($):</label>
+					<input
+						type="text"
+						id="compoundPrincipal"
+						placeholder="Enter amount (e.g., 1000)"
+						required
+					/>
+					<span class="error-message" id="compoundPrincipalError"></span>
+				</div>
+
+				<div class="input-group">
+					<label for="compoundRate">Interest Rate (%):</label>
+					<input
+						type="text"
+						id="compoundRate"
+						placeholder="Enter rate (e.g., 5.5)"
+						required
+					/>
+					<span class="error-message" id="compoundRateError"></span>
+				</div>
+
+				<div class="input-group">
+					<label for="compoundTime">Time (years):</label>
+					<input
+						type="text"
+						id="compoundTime"
+						placeholder="Enter years (e.g., 3)"
+						required
+					/>
+					<span class="error-message" id="compoundTimeError"></span>
+				</div>
+
+				<div class="input-group">
+					<label for="compoundFrequency">Compounding Frequency:</label>
+					<select id="compoundFrequency" required>
+						<option value="">How often is it compounded?</option>
+						<option value="1">Annually</option>
+						<option value="4">Quarterly</option>
+						<option value="12">Monthly</option>
+						<option value="365">Daily</option>
+					</select>
+					<span class="error-message" id="compoundFrequencyError"></span>
+				</div>
+
+				<button type="submit">Calculate Compound Interest</button>
+				<div id="compoundResult" class="result"></div>
+			</form>
+		</section>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>
