@@ -1,0 +1,50 @@
+:root {
+	--darkSteelBlue: #194569;
+	--text: #111111;
+	--lightText: #f1f1f1;
+}
+div {
+	border: 1px solid black;
+	padding: 0 15px 15px;
+	margin-bottom: 10px;
+	background-color: white;
+}
+section {
+	border: 1px solid black;
+	padding: 0 10px 10px 10px;
+	background-color: steelblue;
+	color: var(--text);
+}
+button {
+	background-color: coral;
+	color: var(--text);
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 0.5rem;
+}
+button:hover {
+	color: var(--lightText);
+	background-color: var(--darkSteelBlue);
+}
+input {
+	display: block;
+	margin-top: 0.5rem;
+}
+label {
+	display: block;
+	margin-top: 1rem;
+}
+body {
+	background-color: steelBlue;
+}
+
+h1,
+h2,
+h3 {
+	color: coral;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Objects & Decisions</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>Objects and Decisions</h1>
+		<div id="prob1">
+			<h2>Problem 1</h2>
+			<p
+				>Create an input that asks a user for their age and a button that will submit the answer. Use a switch statement
+				to get the following results:
+			</p>
+			<ul>
+				<li>If birthyear is 1946-1964, print <i>You are a member of the Baby Boomer Generation!</i></li>
+				<li>If birthyear is 1965-1980, print <i>You are part of Generation X!</i></li>
+				<li>If birthyear is 1981-1996, print <i>You belong in the Y Generation!</i></li>
+				<li
+					>If birthyear is 1997-2012, print
+					<i>Generation Z is your generation!</i>
+				</li>
+				<li>If birthyear is 2013-2025, print <i>You are part of Generation Alpha.</i></li>
+				<li>Everything else: print <i>Sorry - your generation is not listed.</i></li>
+			</ul>
+			<section>
+				<h3>Solution</h3>
+				<label for="birth-year">Enter Birthyear (1-4 characters)</label>
+				<input type="text" id="birth-year" required minlength="1" maxlength="4" size="6" />
+				<button id="submit-btn1">Submit:</button>
+				<h4>Results:</h4>
+				<p id="results1"></p>
+			</section>
+		</div>
+
+		<div id="prob2">
+			<h2>Problem 2</h2>
+			<p
+				>Create an array with the following values: 87,56,92,77. Find the average. Use an if/else statement and display
+				the following: If the average is above 75, print out "You are in the top 25% of the class!" If it is between 75
+				and 60, print "You passed the class!" If it is lower than 60, print "Sorry - you did not pass the class. Better
+				luck next time!"</p
+			>
+			<section>
+				<h3>Solution</h3>
+				<button id="submit-btn2-given">Given Case</button>
+				<button id="submit-btn2-rand">Random Case</button>
+				<h4>Results:</h4>
+				<p id="results2"></p>
+			</section>
+		</div>
+		<div id="prob3">
+			<h2>Problem 3</h2>
+			<p
+				>Have a button that chooses a random number between 1-5 (including both). Print the number. Write the following
+				for the respective numbers:
+			</p>
+			<ul>
+				<li>1: The lowest number you can get</li>
+				<li>2: This is the lowest even number you can get</li>
+				<li>3: Right smack in the middle</li>
+				<li>4: Good number!</li>
+				<li>5: Way to roll! </li>
+			</ul>
+			<section>
+				<h3>Solution</h3>
+				<button id="submit-btn3">Num 1-5</button>
+				<h4>Results:</h4>
+				<p id="results3"></p>
+			</section>
+		</div>
+		<div id="prob4">
+			<h2>Problem 4</h2>
+			<p
+				>Create an array with the weekday names. Create an input that asks for the current day. When the user selects
+				submit, print that day that is 5 days away from the current day. For example, if they type in Wednesday, it will
+				print out <i>It will be Monday in 5 days.</i></p
+			>
+			<section>
+				<h3>Solution</h3>
+				<label for="weekday">Enter Day of Wdek</label>
+				<input type="text" id="weekday" required minlength="1" maxlength="9" size="12" />
+				<button id="submit-btn4">Submit:</button>
+				<h4>Results:</h4>
+				<p id="results4"></p>
+			</section>
+		</div>
+		<div id="prob5">
+			<h2>Problem 5</h2>
+			<p>Red Orange Blue Green Purple Yellow</p>
+			<p
+				>Put the colors in an array using the string object. Print out your favorite color using the array index like
+				the sentence below:
+			</p>
+			<p>Example: My favorite color is green.</p>
+			<section>
+				<h3>Solution</h3>
+				<button id="submit-btn5">Click ME</button>
+				<h4>Results:</h4>
+				<p id="results5"></p>
+			</section>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
