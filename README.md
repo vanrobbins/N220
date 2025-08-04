@@ -8,4 +8,4 @@ https://in-info-web4.luddy.indianapolis.iu.edu/~vanrobbi/N220/homework-five/work
 ## Homework 6:
 
 Debugging
-https://in-info-web4.luddy.indianapolis.iu.edu/~vanrobbi/N220/homework-six/objectsDecisions.html
+https://in-info-web4.luddy.indianapolis.iu.edu/~vanrobbi/N220/homework-six/RPSG.html
